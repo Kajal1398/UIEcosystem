@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Types of Products</title>
+	<style type="text/css">
+		#header1{
+			background-color: #010F1A;
+			height: 80px;
+			width: 98%;
+			
+		}
+		.btn{
+			margin-top: 12px;
+			background-color: #010F1A;
+			height: 50px;
+			width :15%;
+			color: white;
+			border:none;
+			font-size: 20px;
+		}
+		.btn:hover{
+			background-color: #1B384F;
+		}
+		#btn_home{
+			background-color:#1B384F; 
+		}
+		
+		#tv{
+			position: absolute;
+			top: 110px;
+			width: 98%;
+		}
+		#mobile{
+			position: absolute;
+			top: 110px;
+			width: 98%;
+		}
+		#refrigirator{
+			position: absolute;
+			top: 110px;
+			width: 98%;
+		}
+		#home{
+			position: absolute;
+			top: 110px;
+			width: 98%;
+		}
+		table{
+			width: 80%;
+		}
+		img{
+			height: 350px;
+			width: 380px;
+		}
+		.product-cart{
+			position: absolute;
+			top: 110px;
+			width: 98%;
+		}
+		
+		#cart_table td, #customers th {
+		  border: 1px solid #ddd;
+		  padding: 8px;
+		}
+
+		#cart_table tr:nth-child(even){background-color: #f2f2f2;}
+
+		#cart_table tr:hover {background-color: #ddd;}
+		
+
+	</style>
+
+	
+	
+
+</head>
+<body>
+	
+	<header id="header1">
+		<center>
+		<button class="btn" id="btn_home"onclick="view_home()">Home</button>
+		<button class="btn" id="btn_tv" onclick="clickTV()">TV</button>
+		<button class="btn" id="btn_mobile" onclick="clickMobile()">Mobile</button>
+		<button class="btn" id="btn_refrigirator" onclick="clickRefrigirator()">Headphones</button>
+		<button class="btn" id="btn_refrigirator" onclick="view_cart()">View Cart</button>
+		
+		<button id="btn_val"></button>
+		</center>
+	</header>
+	<center>
+
+	<div class="home" id="home" style="background-color:AliceBlue;">
+	<div>
+	 <br><br>
+	 <h3 style="color:DodgerBlue;font-family:verdana;text-align:center;font-size:250%"> Welcome to the world of ADK Electronics</h3>
+	 </div>
+	 <div>
+	 <br><br><br>
+	  <p style="text-align:center;font-family:Arial;font-size:150%;color:DarkBlue">
+	  If you are also in search of products which can ease your life then you are at the right place!!!  <br><br><br>
+	  We at ADK Electronics provide various electronic products. These products are available for users to buy.
+	  <br><br> </p>
+	 <p style="font-family:Arial;font-size:100%;color:MediumBlue"> Consumer electronics or home electronics are electronic equipment intended for everyday use, typically in private homes. 
+	 Consumer electronics include devices used for entertainment (flatscreen TVs, DVD players, video games, remote control cars, etc.), communications (telephones, cell phones, e-mail-capable laptops, etc.), and home-office activities (e.g., desktop computers, printers, paper shredders, etc.). 
+      <br>
+	  Electronics like phone, and other appliances are important for us to communicate to one another, learn how things are going on outside our home and to know to possibility on how some things would affect us through news that we can watch from the television and listening from the radio.
+      
+	  <br> <br>
+	  The products we provide include Mobile phones, Laptops, Televisions, Headphones and Cameras. Choose from the options to buy the products. <br><br> </p>
+	 
+	 <br><br>
+	 <h1 style="text-align:center; color:Indigo"> Enjoy Shopping!! <h1>
+	 </div>
+	</div>
+	<div class="product-cart" id="cart">
+		<table id="cart_table">
+			
+		</table>
+	</div>
+	</center>
+	<div id="tv" >
+		<center>
+		<table id="table1"> 
+			<tr>
+				<td><img src="tv1.jpg"></td>
+				<td>
+					<h2 id="tv1">One Plus 55 in Q1 series</h2>
+					<ul>
+						<li>Price-69,899</li>
+						<li>Resolution: 4K Ultra HD (3840x2160) ; Motion Rate 480 Hertz; Actual colour and dimension may differ from the screen image</li>
+						<li>Connectivity: 4 HDMI ports (HDMI 2 supports ARC) to connect set top box, Blu Ray players, gaming console | 3 USB port (USB 3.0*1, USB 2.0*1, USB Type
+						C*1) to connect hard drives and other USB devices</li>
+						<li>Sound : 50 Watts Output | Alluring sound | Dolby Atmos | Full range 2 Speaker |2 Sub-woofer</li>
+						<li>Smart TV Features : Built-In Wifi | One Click Amazon Prime Video Button
+						Remote | Android TV | Google assistant | Oxygen OS with Android Pie (9) | RAM
+						3 GB | 16 GB Storage | CPU: A53*4 | OnePlus PQ Engine Gamma Color Magic |
+						Chromecast Built-in |OxygenPlay VOD selection | Screen casting | OnePlus
+						Connect Mobile Sync and control | Bluetooth Stereo mode | File browser(local
+						media player)</li>
+						<li>Display : QLED 120% NTSC | Bezel Less Design | Support
+						HDR10，HDR10+，HLG decode, Dolby vision certification | Most holistic
+						experience</li>
+					</ul>
+					<input type="button" name="cart" value="Add to Cart" placeholder="One Plus 55 in Q1 series" onclick="add_to_cart(this.placeholder)" />
+
+
+				</td>
+			</tr>
+			<tr>
+				<td><img src="tv2.jpg"></td>
+				<td>
+					<h2>Mi Tv 4x</h2>
+					<ul>
+						<li>Price-54999</li>
+						<li>Resolution: 4K Ultra HD (3840x2160) | Refresh Rate: 60 hertz</li>
+						<li>Connectivity: 3 HDMI ports to connect set top box, Media Streaming players, Blu Ray players, gaming console | 3 USB ports | Bluetooth 5.0</li>
+						<li>Sound: 20 Watts Output | Quad Driver Speakers | Dolby+ DTS-HD</li>
+						<li>Display: 4K HDR+ | Wide Color Gamut | Reality Flow | Vivid Picture Engine</li>
+						<li>Smart TV Features : Android TV | Voice Search | Google Play | Chromecast Ultra
+						| Google Data Saver to watch 3X more on mobile data | Android 9 with Google
+						Data Saver</li>
+						<li>PatchWall - 23+ Content Partners|Kids Mode with Parental Lock|Sports Page
+						Powered by Disney+Hotstar|Smart Curation|Universal search|Collection - Spend
+						less time browsing for finding the right content</li>
+						<li>Supported Apps: Netflix | Prime Video | Disney+ Hotstar | YouTube | 5000+ apps
+						from Google Play Store</li>
+					</ul>
+					<input type="button" name="cart" value="Add to Cart" placeholder="Mi Tv 4x" onclick="add_to_cart(this.placeholder)" />
+				</td>
+			</tr>
+			<tr>
+				<td><img src="tv3.jpeg"></td>
+				<td>
+					<h2>Samsung the serif series 43 inches</h2>
+					<ul>
+						<li>Price- 69999</li>
+						<li>Resolution: 4K Ultra HD (3840X2160) | Refresh Rate: 60 hertz</li>
+						<li>Connectivity: 4 HDMI ports to connect set top box, Blu Ray players, gaming
+						console | 2 USB ports to connect hard drives and other USB devices</li>
+						<li>Sound : 40 Watts Output | Dolby Digital Plus | 4 Ch</li>
+						<li>Smart TV Features : Voice Assistants | SmartThings App | Personal Computer |
+						Home Cloud | Live Cast | Screen Share | Music System</li>
+						<li>Display: LED Panel | Quantum HDR | Supreme UHD Dimming | 100% color
+						volume</li>
+						<li>Alexa Built-in: Voice control your TV and your day. Just ask Alexa to search for movies, play music, control smart home devices, get sports updates and more</li>
+
+					</ul>
+					<input type="button" name="cart" value="Add to Cart" placeholder="Samsung the serif series 43 inches" onclick="add_to_cart(this.placeholder)" />
+				</td>
+			</tr>
+			<tr>
+				<td><img src="tv4.jpg"></td>
+				<td>
+					<h2>Sony Bravia 55 in</h2>
+					<ul>
+						
+						<li>Price-63,990</li>
+						<li>Resolution: 4K Ultra HD (3840x2160) | Refresh Rate: 50 hertz</li>
+						<li>Connectivity : 3 HDMI ports to connect set top box, Blu Ray players | 3 USB ports to connect hard drives and other USB devices</li>
+						<li>Sound : 20 Watts Output | Bass reflex speaker</li>
+						<li>Smart TV Features : Access YouTube instantly with one click | USB Tethering:
+						Seamlessl connect to Internet with Mobile data</li>
+						<li>Display : 4K HDR: Enjoy Lifelike Details | 4K X-Reality Pro: Best Clarity Ever | Slice of Living Desing: Looks good, anywhere | Triluminous : Triluminous display maps a wider palette than most other TVs, reproducing every shade and hue</li>
+						<li>Smart Plug &amp; Play: Easily connect &amp; view photos, music &amp; videos from mobile phone or USB device</li>
+					</ul>
+					<input type="button" name="cart" value="Add to Cart" placeholder="Sony Bravia 55 in" onclick="add_to_cart(this.placeholder)" />
+				</td>
+			</tr>
+			<tr>
+				<td><img src="tv5.jpg"></td>
+				<td>
+					<h2>Samsung wondertainment 65in</h2>
+					<ul>
+						<li>Price- 68899</li>
+						<li>Resolution: 4K Ultra HD (3840x2160) ; Motion Rate 480 Hertz; Actual colour and
+						dimension may differ from the screen image</li>
+						<li>Connectivity: 4 HDMI ports (HDMI 2 supports ARC) to connect set top box, Blu
+						Ray players, gaming console | 3 USB port (USB 3.0*1, USB 2.0*1, USB Type
+						C*1) to connect hard drives and other USB devices</li>
+						<li>Sound : 50 Watts Output | Alluring sound | Dolby Atmos | Full range 2 Speaker | 2 Sub-woofer</li>
+						<li>Smart TV Features : Built-In Wifi | One Click Amazon Prime Video Button
+						Remote | Android TV | Google assistant | Oxygen OS with Android Pie (9) | RAM
+						3 GB | 16 GB Storage | CPU: A53*4 | OnePlus PQ Engine Gamma Color Magic |
+						Chromecast Built-in |OxygenPlay VOD selection | Screen casting | OnePlus
+						Connect Mobile Sync and control | Bluetooth Stereo mode | File browser(local
+						media player)</li>
+						<li>Display : QLED 120% NTSC | Bezel Less Design | Support
+						HDR10，HDR10+，HLG decode, Dolby vision certification | Most holistic
+						experience</li>
+						<li></li>
+					</ul>
+					<input type="button" name="cart" value="Add to Cart" placeholder="Samsung wondertainment 65in" onclick="add_to_cart(this.placeholder)" />
+				</td>
+			</tr>
+         
+    	</table> 
+    </center>
+	</div>
+	<div id="mobile">
+		<center>
+		<table id="table2">
+			<tr>
+				<td><img src="mobile1.jpg"></td>
+				<td>
+					<h2>Apple iphone 11 pro</h2>
+					<ul>
+						<li>Price-1,17,100</li>
+						<li>6.5-inch Super Retina XDR OLED display</li>
+						<li>Water and dust resistant (4 meters for up to 30 minutes, IP68)</li>
+						<li>Triple-camera system with 12MP Ultra Wide, Wide, and Telephoto cameras;
+						Night mode, Portrait mode, and 4K video up to 60fps</li>
+						<li>12MP TrueDepth front camera with Portrait Mode, 4K video, and Slo-Mo</li>
+						<li>Face ID for secure authentication and Apple Pay</li>
+						<li>A13 Bionic chip with third-generation Neural Engine</li>
+						<li>Fast charge with 18W adapter included</li>
+
+					</ul>
+					<input type="button" name="cart" value="Add to Cart" placeholder="Apple iphone 11 pro" onclick="add_to_cart(this.placeholder)" />
+
+				</td>
+				
+			</tr>
+			<tr>
+				<td><img src="mobile2.jpeg"></td>
+				<td>
+					<h2>Moto one fusion +</h2>
+					<ul>
+						<li>Price-17,499</li>
+						<li>6 GB RAM | 128 GB ROM | Expandable Upto 1 TB</li>
+						<li>16.51 cm (6.5 inch) Full HD+ Display</li>
+						<li>64MP + 8MP + 5MP + 2MP | 16MP Front Camera</li>
+						<li>5000 mAh Lithium Polymer Battery</li>
+						<li>Qualcomm Snapdragon 730G Processor</li>
+						
+					</ul>
+					<input type="button" name="cart" value="Add to Cart" placeholder="Moto one fusion +" onclick="add_to_cart(this.placeholder)" />
+				</td>
+				
+			</tr>
+			<tr>
+				<td><img src="mobile3.jpg"></td>
+				<td>
+					<h2>iPhone xS Max</h2>
+					<ul>
+						<li>Price-68,990</li>
+						<li>6.5-inch Super Retina display (OLED) with HDR</li>
+						<li>IP68 dust and water resistant (maximum depth of 2 meters up to 30 minutes)</li>
+						<li>12MP dual cameras with dual OIS and 7MP TrueDepth front camera—Portrait
+						mode, Portrait Lighting, Depth Control, and Smart HDR</li>
+						<li>Face ID for secure authentication</li>
+						<li>A12 Bionic with next-generation Neural Engine</li>
+						<li>Wireless charging—works with Qi chargers</li>
+						<li>iOS 12 with Memoji, Screen Time, Siri Shortcuts, and Group FaceTime</li>
+						
+					</ul>
+					<input type="button" name="cart" value="Add to Cart" placeholder="iPhone xS Max" onclick="add_to_cart(this.placeholder)" />
+				</td>
+				
+			</tr>
+			<tr>
+				<td><img src="mobile4.jpg"></td>
+				<td>
+					<h2>Samsung Galaxy S20+</h2>
+					<ul>
+						<li>Price-77999</li>
+						<li>Quad rear camera - 64MP OIS F2.0 tele camera + 12MP F2.2 ultra wide + 12MP
+						(2PD) OIS F1.8 wide + VGA depth camera | 10MP (2PD) OIS F2.2 front punch
+						hole camera | rear LED flash</li>
+						<li>16.95 centimeters (6.7-inch) dynamic AMOLED display with capacitive
+						touchscreen, 3200 x 1440 pixels resolution | Quad HD+ resolution</li>
+						<li>Memory, Storage &amp; SIM: 8GB RAM | 128GB internal memory expandable up to
+						1TB | Dual SIM (nano+nano) dual-standby (4G+4G), microSD card slot
+						(expandable upto 1 TB), hybrid sim slot</li>
+						<li>Android v10.0 operating system with 2.73GHz+2.5GHz+2GHz Exynos 990 octa
+						core processor</li>
+						<li>4500mAH (non-removable) lithium-ion battery | Face-unlock &amp; finger print sensor</li>
+						
+					</ul>
+					<input type="button" name="cart" value="Add to Cart" placeholder="Samsung Galaxy S20+" onclick="add_to_cart(this.placeholder)" />
+				</td>
+			</tr>
+			<tr>
+				<td><img src="mobile5.jpg"></td>
+				<td>
+					<h2>One Plus 8 pro</h2>
+					<ul>
+						<li>Price-54999</li>
+						<li>48MP rear camera with 4k video at 30/60 fps, 1080p video at 30/60 fps, super
+						slow motion: 720p video at 480 fps, 1080p video at 240fps, time-lapse: 1080p
+						30fps, 4k 30fps, cine aspect ratio video recording, video hdr, cat&amp;dog face detect
+						&amp; focus, ultrashot hdr, nightscape, super micro, portrait, pro mode, panorama, ai
+						scene detection, raw image, audio zoom, audio 3d, infrared photography camera
+						| 48MP front camera</li>
+						<li>17.22 centimeters (6.78-inch) 120Hz fluid display with 3168 x 1440 pixels
+						resolution, 513 ppi pixel density and vibrant color effect color support</li>
+						<li>Memory, Storage &amp; SIM: 8GB RAM | 128GB internal memory | Dual SIM
+						(nano+nano) dual-standby (5G+5G)</li>
+						<li>Oxygen OS based on Android v10 operating system with 2.86GHz of clock
+						speed with Qualcomm Snapdragon 865, powered by Kryo 585 CPU octa core
+						processor, Adreno 650</li>
+						<li>4510mAH lithium-ion battery</li>
+						
+					</ul>
+					<input type="button" name="cart" value="Add to Cart" placeholder="One Plus 8 pro" onclick="add_to_cart(this.placeholder)" />
+				</td>
+			</tr>
+
+		</table>
+		</center>
+	</div>
+	<div id="refrigirator">
+		<center>
+		<table id="table3">
+			<tr>
+				<td><img src="headphone1.png"></td>
+				<td>
+					<h2>JBL Tune 220 true wireless</h2>
+					<ul>
+						<li>Price- 7999</li>
+						<li>JBL Pure Bass Sound</li>
+						<li>Distortion Free Stereo Calling</li>
+						<li>19 Hours of Combined Playback (3 Hrs on Earbuds &amp; 16 Hours on Charging
+						Case)</li>
+						<li>Bluetooth.5.0 for Seamless Connectivity with Auto Sync between Earbuds</li>
+						<li>Control on the go with buttons on left and right earbuds</li>
+						<li>Stylish and Sleek with Metallic Finish Buds and Charging Case</li>
+						<li>Voice Assistant Integration</li>
+					</ul>
+					<input type="button" name="cart" value="Add to Cart" placeholder="JBL Tune 220 true wireless" onclick="add_to_cart(this.placeholder)" />
+				</td>
+			</tr>
+			<tr>
+				<td><img src="headphone2.jpg"></td>
+				<td>
+					<h2>Mi true wireless earphones 2</h2>
+					<ul>
+						<li>Price-4499</li>
+						<li>Strong battery life that lasts up to 14 hrs-  4 hrs on a single charge and 14 hrs with charging case .</li>
+						<li>Immersive High definition audio quality with LHDC hi-res codec for an
+						exceptional real audio experience.</li>
+						<li>Enjoy distortion-free music with powerful neodymium magnets that ensures
+						brilliant sonic accuracy.</li>
+						<li>Provides a lossless , fat, low latency , lag–free connection enabled by Bluetooth 5.0 that enhances the music experience</li>
+					</ul>
+					<input type="button" name="cart" value="Add to Cart" placeholder="Mi true wireless earphones 2" onclick="add_to_cart(this.placeholder)" />
+					
+				</td>
+			</tr>
+			<tr>
+				<td><img src="headphone3.jpg"></td>
+				<td>
+					<h2>OnePlus Bullets wireless</h2>
+					<ul>
+						<li>Price-2999</li>
+						<li>Freedom from wires. Freedom from charging stress.</li>
+						<li>Use the new Magnetic Control feature to take control of your music.</li>
+						<li>Designed for durability and comfort - aluminum alloy construction</li>
+						<li>Clear sound on the move.</li>
+						
+					</ul>
+					<input type="button" name="cart" value="Add to Cart" placeholder="OnePlus Bullets wireless" onclick="add_to_cart(this.placeholder)" />
+				</td>
+			</tr>
+			<tr>
+				<td><img src="headphone4.jpg"></td>
+				<td>
+					<h2>Boat Rockerz 400 Bluetooth headphones</h2>
+					<ul>
+						<li>Price-1499</li>
+						<li>Move in style with the lightweight, foldable and adaptive earcups</li>
+						<li>Stay immersed into your vibe with up to 8 hours nonstop playback</li>
+						<li>Get connected to ‘em playlists in an instant with Bluetooth connectivity as well as AUX compatibility</li>
+						<li>You can command you playback, calls and voice assistant via its easy to access
+						multifunction controls and built-in mic</li>
+						<li>Its soft ear cushions offer a comfortable listening time so that you can wear your style all day long</li>
+						
+					</ul>
+					<input type="button" name="cart" value="Add to Cart" placeholder="Boat Rockerz 400 Bluetooth headphones" onclick="add_to_cart(this.placeholder)" />
+				</td>
+			</tr>
+			<tr>
+				<td><img src="headphone5.jpg"></td>
+				<td>
+					<h2>Boat airdopes 311v2</h2>
+					<ul>
+						<li>Pricee- 2499</li>
+						<li>Airdopes 311V2 offers a nonstop playback of up to 3.5H with each charge and an
+						additional 12H playtime with the included charging case</li>
+						<li>It offers Stereo Calling feature for clear and crisp communication</li>
+						<li>Airdopes 311V2 come equipped with smooth Integrated Multifunction Controls for
+						a complete control over playback, calls and instant voice assistant</li>
+						<li>Its IPX5 marked Sweat &amp; Water resistance ensures a carefree listening
+						experience</li>
+						
+						
+					</ul>
+					<input type="button" name="cart" value="Add to Cart" placeholder="Boat airdopes 311v2" onclick="add_to_cart(this.placeholder)" />
+				</td>
+			</tr>
+		</table>
+		</center>
+	</div>
+
+	<script>
+	  document.getElementById("btn_val").innerHTML="T";
+	  document.getElementById("btn_val").style.visibility="hidden"
+	  document.getElementById("tv").style.visibility = "hidden";
+
+	  document.getElementById("mobile").style.visibility = "hidden";
+	  document.getElementById("refrigirator").style.visibility = "hidden";
+	  document.getElementById("cart").style.visibility="hidden";
+	  document.getElementById("home").style.visibility="visible"
+
+
+
+	</script>
+	<script>
+		function view_home() {
+			document.getElementById("btn_tv").style.backgroundColor="#010F1A";
+			document.getElementById("btn_mobile").style.backgroundColor="#010F1A";
+			document.getElementById("btn_refrigirator").style.backgroundColor="#010F1A";
+			document.getElementById("btn_home").style.backgroundColor="#1B384F";
+
+			document.getElementById("btn_val").style.visibility="hidden"
+	  		document.getElementById("tv").style.visibility = "hidden";
+	  		document.getElementById("mobile").style.visibility = "hidden";
+	  		document.getElementById("refrigirator").style.visibility = "hidden";
+	  		document.getElementById("cart").style.visibility="hidden";
+	  		document.getElementById("home").style.visibility="visible"
+		}
+	</script>
+	<script>
+		function view_cart() {
+			document.getElementById("cart").style.visibility="visible";
+			  document.getElementById("tv").style.visibility = "hidden";
+
+			  document.getElementById("mobile").style.visibility = "hidden";
+
+			  document.getElementById("refrigirator").style.visibility = "hidden";
+			  document.getElementById("home").style.visibility="hidden"
+			// body...
+		}
+	  
+	</script>
+	<script>
+		function add_to_cart(clicked_name) {
+			//var x=document.getElementByName("cart").placeholder;
+			var table = document.getElementById("cart_table");
+
+// Create an empty <tr> element and add it to the 1st position of the table:
+			var row = table.insertRow(0);
+
+			// Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+			var cell1 = row.insertCell(0);
+			cell1.innerHTML = clicked_name;
+			
+		}
+	</script>
+
+	<script>
+		function clickTV(){
+			document.getElementById("tv").style.visibility = "visible";
+			document.getElementById("mobile").style.visibility = "hidden";
+			
+			document.getElementById("btn_tv").style.backgroundColor="#1B384F";
+			document.getElementById("btn_mobile").style.backgroundColor="#010F1A";
+			document.getElementById("btn_refrigirator").style.backgroundColor="#010F1A";
+
+
+			document.getElementById("tv").style.visibility = "visible";
+			document.getElementById("mobile").style.visibility = "hidden";
+			document.getElementById("refrigirator").style.visibility = "hidden";
+			document.getElementById("cart").style.visibility="hidden";
+			document.getElementById("home").style.visibility="hidden"
+			document.getElementById("btn_home").style.backgroundColor="#010F1A";
+
+			  
+			
+			  document.getElementById("btn_val").innerHTML="T";
+
+		}
+	</script>
+	<script>
+		function clickMobile(){
+			
+			document.getElementById("btn_tv").style.backgroundColor="#010F1A";
+			document.getElementById("btn_mobile").style.backgroundColor="#1B384F";
+			document.getElementById("btn_refrigirator").style.backgroundColor="#010F1A";
+			document.getElementById("btn_home").style.backgroundColor="#010F1A";
+			
+			document.getElementById("tv").style.visibility = "hidden";
+			document.getElementById("mobile").style.visibility = "visible";
+			document.getElementById("refrigirator").style.visibility = "hidden";
+			document.getElementById("cart").style.visibility="hidden";
+			document.getElementById("home").style.visibility="hidden"
+
+			  document.getElementById("btn_val").innerHTML="M";
+		}
+	</script>
+	<script>
+		function clickRefrigirator(){
+			document.getElementById("btn_tv").style.backgroundColor="#010F1A";
+			document.getElementById("btn_mobile").style.backgroundColor="#010F1A";
+			document.getElementById("btn_refrigirator").style.backgroundColor="#1B384F";
+			document.getElementById("btn_home").style.backgroundColor="#010F1A";
+
+			document.getElementById("tv").style.visibility = "hidden";
+			document.getElementById("mobile").style.visibility = "hidden";
+			document.getElementById("refrigirator").style.visibility = "visible";
+			document.getElementById("home").style.visibility="hidden"
+			document.getElementById("cart").style.visibility="hidden";
+			
+			  
+
+			document.getElementById("btn_val").innerHTML="H";
+
+		}
+	</script>
+
+</body>
+</html>
